@@ -1,0 +1,28 @@
+.divider_container{
+    display: flex;
+    justify-content: center;
+}
+
+.divider-line1{
+    width: 40%;
+    margin-top: 15px;
+    border-top: white solid 1px;
+}
+
+.divider-line2{
+    width: 40%;
+    margin-top: 15px;
+    border-top: white solid 1px;
+}
+
+.end_square{
+    margin-top: -3px;
+    height: 5px;
+    width: 5px;
+    transform: rotate(45deg);
+    background-color: white
+}
+
+.end_square.right{
+    float:right
+}

@@ -1,0 +1,60 @@
+@media screen and (max-width: 400px) {
+    .line1{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.line{
+    border-radius: 10px;
+    margin-top: 0px;
+    width: 30px;
+    height: 1px;
+    background-color: #8fb0a9;
+    transition-duration: .3s;
+    position: relative;
+    z-index: 60;
+}
+
+.line1{
+    position: relative;
+    border-radius: 50px;
+    margin-top: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    transition-duration: .5s;
+    z-index: 60;
+    cursor: pointer;
+}
+
+.line2{
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 30px;
+    height: 1px;
+    background-color: #8fb0a9;
+    transition-duration: .3s;
+    position: relative;
+    z-index: 60;
+}
+
+.line3{
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-left: 5px;
+    width: 0px;
+    height: 0px;
+    background-color: #8fb0a9;
+    transition-duration: .3s;
+    position: relative;
+    z-index: 60;
+}
+
+.block{
+    position: fixed;
+    z-index: 11;
+    padding: 1%;
+    cursor: pointer;
+    z-index: 60;
+}
