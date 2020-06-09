@@ -8,20 +8,20 @@ export const MenuPage = () => {
 
     const captions = [
         "Rae's & Kay's Melting Pot is a family-owned, mother and daughter business that started out simply because of our strong passion and love for Puerto Rican and Soul Food.  ",
-        "Our business thrives to create a balance between healthy and soul food with a tist of Spanish cuisine in-between."]
+        "Our business thrives to create a balance between healthy and soul food with a twist of Spanish cuisine in-between."]
 
     const mixUp = [{
-        "Momma's BBQ Chicken Dinner": "(Choose 3 sides)",
-        "Momma's Southern Fried Chicken Dinner": "(Choose 3 sides)",
-        "For Soup & Salad Lovers": "(Ask about the soup of the day)",
-        "Wrap It Up": "(Chicken Salad, Tuna Salad, Turkey, Ham, Veggie Love)"
+        "Momma's BBQ Chicken Dinner": ": (Choose 3 sides)",
+        "Momma's Southern Fried Chicken Dinner": ": (Choose 3 sides)",
+        "For Soup & Salad Lovers": ": (Ask about the soup of the day)",
+        "Wrap It Up": ": (Chicken Salad, Tuna Salad, Turkey, Ham, Veggie Love)"
         },
         'yellow'
         ]
 
     const madsCuisine = [{
-        "Madelyne's Rice & Bean Pork Chop Dinner": "(Choose any 2 sides)",
-        "Pastelito Dinner": "(Chicken, Pork or Veggie) (Choose any 2 sides)",
+        "Madelyne's Rice & Bean Pork Chop Dinner": ": (Choose any 2 sides)",
+        "Pastelito Dinner": ": (Chicken, Pork or Veggie) (Choose any 2 sides)",
         "Corn Beef Hash Dinner": '',
         "Rellenos de Papa": ""
         },

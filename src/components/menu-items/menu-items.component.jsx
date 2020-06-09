@@ -8,7 +8,7 @@ export const MenuItems = (props) => {
     return(
         <div className='menu-items'>
             <h3 style={{color: props.content[1]}}>{props.title}</h3>
-            {Object.keys(content).map(a => <p>{a}: {content[a]}</p>)}
+            {Object.keys(content).map(a => <p>{a}{content[a]}</p>)}
         </div>
     )
 }
