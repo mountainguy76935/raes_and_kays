@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/raes_and_kays/static/css/main.11b1dfea.chunk.css",
+    "main.js": "/raes_and_kays/static/js/main.ae69cf72.chunk.js",
+    "main.js.map": "/raes_and_kays/static/js/main.ae69cf72.chunk.js.map",
+    "runtime-main.js": "/raes_and_kays/static/js/runtime-main.11b0e880.js",
+    "runtime-main.js.map": "/raes_and_kays/static/js/runtime-main.11b0e880.js.map",
+    "static/js/2.9a4bebaa.chunk.js": "/raes_and_kays/static/js/2.9a4bebaa.chunk.js",
+    "static/js/2.9a4bebaa.chunk.js.map": "/raes_and_kays/static/js/2.9a4bebaa.chunk.js.map",
+    "index.html": "/raes_and_kays/index.html",
+    "precache-manifest.7b5c39b3f087f3d3787a11f4e5abf33d.js": "/raes_and_kays/precache-manifest.7b5c39b3f087f3d3787a11f4e5abf33d.js",
+    "service-worker.js": "/raes_and_kays/service-worker.js",
+    "static/css/main.11b1dfea.chunk.css.map": "/raes_and_kays/static/css/main.11b1dfea.chunk.css.map",
+    "static/js/2.9a4bebaa.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.9a4bebaa.chunk.js.LICENSE.txt",
+    "static/media/chicken.JPG": "/raes_and_kays/static/media/chicken.1a7fb4a3.JPG",
+    "static/media/fork_knife.jpg": "/raes_and_kays/static/media/fork_knife.ab781d0b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11b0e880.js",
+    "static/js/2.9a4bebaa.chunk.js",
+    "static/css/main.11b1dfea.chunk.css",
+    "static/js/main.ae69cf72.chunk.js"
+  ]
+}
