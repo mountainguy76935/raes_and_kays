@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8a0924a913e817e1396eb60b96589c27",
+    "revision": "fdce5cadb8ecd642a518e6ba9fdd3109",
     "url": "/raes_and_kays/index.html"
   },
   {
-    "revision": "03cbb4ac819b8270ede5",
-    "url": "/raes_and_kays/static/css/main.b0c1c5a9.chunk.css"
+    "revision": "f2cd78cf4e737e26dfc9",
+    "url": "/raes_and_kays/static/css/main.1b7406d3.chunk.css"
   },
   {
-    "revision": "1430699bce575b44382c",
-    "url": "/raes_and_kays/static/js/2.9a4bebaa.chunk.js"
+    "revision": "52f8e98d89d36bfa0d1e",
+    "url": "/raes_and_kays/static/js/2.5c10bfcc.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/raes_and_kays/static/js/2.9a4bebaa.chunk.js.LICENSE.txt"
+    "url": "/raes_and_kays/static/js/2.5c10bfcc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03cbb4ac819b8270ede5",
-    "url": "/raes_and_kays/static/js/main.94773d46.chunk.js"
+    "revision": "f2cd78cf4e737e26dfc9",
+    "url": "/raes_and_kays/static/js/main.880a1169.chunk.js"
   },
   {
     "revision": "de898228591f68d7c2ab",
@@ -30,5 +30,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ab781d0b6405bf65a6f64b7bc51d64c6",
     "url": "/raes_and_kays/static/media/fork_knife.ab781d0b.jpg"
+  },
+  {
+    "revision": "19a46f3fe38bda01cda56335679d25cc",
+    "url": "/raes_and_kays/static/media/wine_glasses.19a46f3f.jpg"
   }
 ]);
