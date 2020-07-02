@@ -1,0 +1,97 @@
+@keyframes title-move-right{
+    0% {
+      font-size: 0px;
+      top: 42%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    50%{
+      height: 50px;
+      width: 400px;
+      top: 15%;
+      border-radius: 50%;
+    }
+    100%{
+        font-size: 40px;
+        width: 400px;
+        top: 10%;
+        transform: translate(-50%, 0%);
+    }
+  }
+
+  @keyframes title-move-left{
+    0% {
+      font-size: 0px;
+      top: 42%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    50%{
+      height: 50px;
+      width: 400px;
+      top: 0%;
+      border-radius: 50%;
+    }
+    100%{
+        font-size: 40px;
+        width: 450px;
+        top: 0%;
+        transform: translate(-50%, -15%);
+    }
+  }
+  
+  .cauldron-svg-title{
+      display: flex;
+      font-size: 30px;
+      left: 50%;;
+      transform: translate(-50%, -15%);
+      position: absolute;
+      z-index: 30
+  }
+
+  .cauldron-svg-title-left{
+      position: absolute;
+      background-color: transparent;
+      font-size: 0px;
+      left: 50%;
+      animation-delay: 3.2s;
+      animation-name: title-move-left;
+      animation-fill-mode: forwards;
+      animation-duration: 1.5s;
+      border-radius: 50%;
+      z-index: 10;
+      overflow: hidden
+    }
+  
+  .cauldron-svg-title-right{
+      position: absolute;
+      background-color: transparent;
+      font-size: 0px;
+      left: 50%;
+      animation-delay: 3s;
+      animation-name: title-move-right;
+      animation-fill-mode: forwards;
+      animation-duration: 1.5s;
+      border-radius: 50%;
+      z-index: 5;
+      overflow: hidden
+    }
+
+.cauldron-svg-animation{
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+    padding-bottom: 1%;
+  }
+
+.cauldron-svg-container{
+    width: 100%;
+    position: relative;
+    height: 500px
+}

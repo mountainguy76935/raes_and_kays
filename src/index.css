@@ -5,10 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: center;
+  font-family: 'Source Serif Pro', serif;
+  background-color: black;
+  color: white;
+  font-weight: lighter;
 }
 
 * {
-  margin: 0
+  margin: 0;
 }
 
 code {

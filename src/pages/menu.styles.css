@@ -1,4 +1,23 @@
-.menu-page-title{
-    padding-top: 50px;
-    padding-bottom: 2%
-  }
+.menu-svg{
+  background-color: black;
+  height: 400px;
+  width: 400px;
+  transform: translate(115%, 0%);
+  padding-bottom: 1%;
+  margin-top: -10%
+}
+
+.menu-page img{
+  max-width: 100%;
+}
+
+.menu-page{
+  overflow-x: hidden;
+}
+
+.menu-items-all{
+  margin-top: 2%;
+  margin-right: 0;
+  opacity: 1;
+  transition-duration: .8s
+}
