@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/raes_and_kays/static/css/main.9dcabcfc.chunk.css",
-    "main.js": "/raes_and_kays/static/js/main.bd924c12.chunk.js",
-    "main.js.map": "/raes_and_kays/static/js/main.bd924c12.chunk.js.map",
+    "main.css": "/raes_and_kays/static/css/main.bf416ef1.chunk.css",
+    "main.js": "/raes_and_kays/static/js/main.e6788ba4.chunk.js",
+    "main.js.map": "/raes_and_kays/static/js/main.e6788ba4.chunk.js.map",
     "runtime-main.js": "/raes_and_kays/static/js/runtime-main.11b0e880.js",
     "runtime-main.js.map": "/raes_and_kays/static/js/runtime-main.11b0e880.js.map",
-    "static/js/2.5c10bfcc.chunk.js": "/raes_and_kays/static/js/2.5c10bfcc.chunk.js",
-    "static/js/2.5c10bfcc.chunk.js.map": "/raes_and_kays/static/js/2.5c10bfcc.chunk.js.map",
+    "static/js/2.3f5d5056.chunk.js": "/raes_and_kays/static/js/2.3f5d5056.chunk.js",
+    "static/js/2.3f5d5056.chunk.js.map": "/raes_and_kays/static/js/2.3f5d5056.chunk.js.map",
     "index.html": "/raes_and_kays/index.html",
-    "precache-manifest.7ca10d90bdfe4fa51c3dbcfe019e8453.js": "/raes_and_kays/precache-manifest.7ca10d90bdfe4fa51c3dbcfe019e8453.js",
+    "precache-manifest.a956e7756295e8ae42ec6606de4877ba.js": "/raes_and_kays/precache-manifest.a956e7756295e8ae42ec6606de4877ba.js",
     "service-worker.js": "/raes_and_kays/service-worker.js",
-    "static/css/main.9dcabcfc.chunk.css.map": "/raes_and_kays/static/css/main.9dcabcfc.chunk.css.map",
-    "static/js/2.5c10bfcc.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.5c10bfcc.chunk.js.LICENSE.txt",
+    "static/css/main.bf416ef1.chunk.css.map": "/raes_and_kays/static/css/main.bf416ef1.chunk.css.map",
+    "static/js/2.3f5d5056.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.3f5d5056.chunk.js.LICENSE.txt",
+    "static/media/cauldron.svg": "/raes_and_kays/static/media/cauldron.371cc4d3.svg",
     "static/media/chicken.JPG": "/raes_and_kays/static/media/chicken.1a7fb4a3.JPG",
     "static/media/fork_knife.jpg": "/raes_and_kays/static/media/fork_knife.ab781d0b.jpg",
     "static/media/wine_glasses.jpg": "/raes_and_kays/static/media/wine_glasses.19a46f3f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.11b0e880.js",
-    "static/js/2.5c10bfcc.chunk.js",
-    "static/css/main.9dcabcfc.chunk.css",
-    "static/js/main.bd924c12.chunk.js"
+    "static/js/2.3f5d5056.chunk.js",
+    "static/css/main.bf416ef1.chunk.css",
+    "static/js/main.e6788ba4.chunk.js"
   ]
 }
