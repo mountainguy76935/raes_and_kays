@@ -8,9 +8,9 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   text-align: center;
-  font-family: 'Source Serif Pro', serif;
-  background-color: black;
-  color: white;
+  font-family: 'Source Serif Pro', serif !important;
+  background-color: black !important;
+  color: white !important;
   font-weight: lighter;
 }
 

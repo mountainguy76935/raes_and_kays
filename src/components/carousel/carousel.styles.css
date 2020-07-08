@@ -1,0 +1,11 @@
+.carousel-images{
+    display: flex;
+    text-align: center;
+    height: 400px;
+}
+
+.carousel-caption.d-none.d-md-block{
+    color: white;
+    font-weight: 800;
+    margin: 0;
+}

@@ -3,6 +3,7 @@ import './menu.styles.css';
 import { Divider } from '../components/divider/divider.component';
 import { TextBox } from '../components/text-box/text-box.component';
 import { MenuItems } from '../components/menu-items/menu-items.component';
+import CarouselFinal from '../components/carousel/carousel.component';
 import { CauldronAnimation } from '../components/cauldron-animation/cauldron-animation.component';
 
 export const MenuPage = () => {
@@ -42,18 +43,12 @@ export const MenuPage = () => {
     ]
 
     return (
-        <div style={{width: '100%', height: '100%', paddingTop: '50px'}}>
+        <div style={{ width: '100%', height: '100%', paddingTop: '50px' }}>
             <CauldronAnimation />
             <Divider header={true} />
             <TextBox content={captions[0] + captions[1]}></TextBox>
-            <img
-                src={require('../images/chicken.JPG')}
-                alt='chicken dinner'
-                height='250em'
-                width='350em'
-            />
-            <br />
             <div className='menu-items-all'>
+                <CarouselFinal />
                 <MenuItems
                     content={mixUp}
                     title='THE MIX UP'

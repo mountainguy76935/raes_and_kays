@@ -9,15 +9,18 @@
 
 .menu-page img{
   max-width: 100%;
+  
 }
 
 .menu-page{
   overflow-x: hidden;
+  display: flex;
+  text-align: center;
 }
 
 .menu-items-all{
   margin-top: 2%;
   margin-right: 0;
   opacity: 1;
-  transition-duration: .8s
+  transition-duration: .8s;
 }

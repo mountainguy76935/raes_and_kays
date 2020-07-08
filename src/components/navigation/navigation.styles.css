@@ -9,8 +9,8 @@
 
 @media screen and (max-width: 850px){
     .linkClass{
-        text-decoration: none;
-        color: white;
+        text-decoration: none !important;
+        color: white !important;
         font-size: 10px;
         transition-duration: .2s;
         border-bottom: black solid 0.01rem
@@ -65,8 +65,8 @@
 }
 
 .linkClass{
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
     font-size: 20px;
     transition-duration: .2s;
     border-bottom: black solid 0.01rem;
