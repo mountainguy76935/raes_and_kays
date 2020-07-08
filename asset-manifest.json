@@ -1,26 +1,33 @@
 {
   "files": {
-    "main.css": "/raes_and_kays/static/css/main.bf416ef1.chunk.css",
-    "main.js": "/raes_and_kays/static/js/main.a6d018cd.chunk.js",
-    "main.js.map": "/raes_and_kays/static/js/main.a6d018cd.chunk.js.map",
+    "main.css": "/raes_and_kays/static/css/main.16e8a0d3.chunk.css",
+    "main.js": "/raes_and_kays/static/js/main.435fc42e.chunk.js",
+    "main.js.map": "/raes_and_kays/static/js/main.435fc42e.chunk.js.map",
     "runtime-main.js": "/raes_and_kays/static/js/runtime-main.11b0e880.js",
     "runtime-main.js.map": "/raes_and_kays/static/js/runtime-main.11b0e880.js.map",
-    "static/js/2.3f5d5056.chunk.js": "/raes_and_kays/static/js/2.3f5d5056.chunk.js",
-    "static/js/2.3f5d5056.chunk.js.map": "/raes_and_kays/static/js/2.3f5d5056.chunk.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/raes_and_kays/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.fb717788.chunk.js": "/raes_and_kays/static/js/2.fb717788.chunk.js",
+    "static/js/2.fb717788.chunk.js.map": "/raes_and_kays/static/js/2.fb717788.chunk.js.map",
     "index.html": "/raes_and_kays/index.html",
-    "precache-manifest.4a1d1fd5d9fbcfdf4db9707a98ba1955.js": "/raes_and_kays/precache-manifest.4a1d1fd5d9fbcfdf4db9707a98ba1955.js",
+    "precache-manifest.febfacb593d1cdff621b1afa16123761.js": "/raes_and_kays/precache-manifest.febfacb593d1cdff621b1afa16123761.js",
     "service-worker.js": "/raes_and_kays/service-worker.js",
-    "static/css/main.bf416ef1.chunk.css.map": "/raes_and_kays/static/css/main.bf416ef1.chunk.css.map",
-    "static/js/2.3f5d5056.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.3f5d5056.chunk.js.LICENSE.txt",
+    "static/css/2.829c9cb5.chunk.css.map": "/raes_and_kays/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.16e8a0d3.chunk.css.map": "/raes_and_kays/static/css/main.16e8a0d3.chunk.css.map",
+    "static/js/2.fb717788.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.fb717788.chunk.js.LICENSE.txt",
+    "static/media/arroz.png": "/raes_and_kays/static/media/arroz.6ee8018c.png",
     "static/media/cauldron.svg": "/raes_and_kays/static/media/cauldron.371cc4d3.svg",
-    "static/media/chicken.JPG": "/raes_and_kays/static/media/chicken.1a7fb4a3.JPG",
     "static/media/fork_knife.jpg": "/raes_and_kays/static/media/fork_knife.ab781d0b.jpg",
-    "static/media/wine_glasses.jpg": "/raes_and_kays/static/media/wine_glasses.19a46f3f.jpg"
+    "static/media/fruit_plate.png": "/raes_and_kays/static/media/fruit_plate.4dd20e85.png",
+    "static/media/pastelitos.png": "/raes_and_kays/static/media/pastelitos.20f66e3a.png",
+    "static/media/pork_chop.jpg": "/raes_and_kays/static/media/pork_chop.1a7fb4a3.jpg",
+    "static/media/wine_glasses.jpg": "/raes_and_kays/static/media/wine_glasses.19a46f3f.jpg",
+    "static/media/wrap.png": "/raes_and_kays/static/media/wrap.da036083.png"
   },
   "entrypoints": [
     "static/js/runtime-main.11b0e880.js",
-    "static/js/2.3f5d5056.chunk.js",
-    "static/css/main.bf416ef1.chunk.css",
-    "static/js/main.a6d018cd.chunk.js"
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.fb717788.chunk.js",
+    "static/css/main.16e8a0d3.chunk.css",
+    "static/js/main.435fc42e.chunk.js"
   ]
 }
