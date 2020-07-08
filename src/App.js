@@ -9,8 +9,8 @@ function App() {
 return (
     <React.Fragment>
       <Navigation />
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/menu' component={MenuPage} />
+      <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage} />
+      <Route exact path={process.env.PUBLIC_URL + '/menu'} component={MenuPage} />
     </React.Fragment>
   );
 }
