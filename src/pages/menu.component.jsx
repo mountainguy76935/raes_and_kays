@@ -6,7 +6,7 @@ import { MenuItems } from '../components/menu-items/menu-items.component';
 import CarouselFinal from '../components/carousel/carousel.component';
 import { CauldronAnimation } from '../components/cauldron-animation/cauldron-animation.component';
 
-export const MenuPage = () => {
+export const MenuPage = (props) => {
 
     const captions = [
         "Rae's & Kay's Melting Pot is a family-owned, mother and daughter business that started out simply because of our strong passion and love for Puerto Rican and Soul Food.  ",
@@ -43,8 +43,9 @@ export const MenuPage = () => {
     ]
 
     return (
-        <div style={{ width: '100%', height: '100%', paddingTop: '50px' }}>
+        <div className="menu-title-block">
             <CauldronAnimation />
+            <div style={{zIndex: '40'}}>
             <Divider header={true} />
             <TextBox content={captions[0] + captions[1]}></TextBox>
             <div className='menu-items-all'>
@@ -61,6 +62,7 @@ export const MenuPage = () => {
                     content={sides}
                     title="SIDE LOVERS"
                 />
+            </div>
             </div>
             <Divider header={false} />
         </div>

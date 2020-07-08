@@ -6,11 +6,12 @@ import { Navigation } from './components/navigation/navigation.component';
 import { Route } from 'react-router-dom'
 
 function App() {
+
 return (
     <React.Fragment>
       <Navigation />
       <Route exact path='/' component={HomePage} />
-      <Route exact path='/menu' component={MenuPage} />
+      <Route exact path='/menu' render={() => <MenuPage/>}/>
     </React.Fragment>
   );
 }

@@ -1,6 +1,24 @@
+@keyframes bye-cauldron{
+  0%{
+    height: 500px
+  }
+  100%{
+    height: 150px;
+  }
+}
+
+@keyframes bye-cauldron-self{
+  0%{
+    opacity: 1
+  }
+  100%{
+    opacity: 0
+  }
+}
+
 @keyframes title-move-right{
     0% {
-      font-size: 0px;
+      font-size: 0vh;
       top: 42%;
       width: 10px;
       height: 10px;
@@ -13,16 +31,16 @@
       border-radius: 50%;
     }
     100%{
-        font-size: 40px;
-        width: 400px;
-        top: 10%;
-        transform: translate(-50%, 0%);
+        font-size: 5vh;
+        width: 500px;
+        top: 30%;
+        transform: translate(-30%, 0%);
     }
   }
 
   @keyframes title-move-left{
     0% {
-      font-size: 0px;
+      font-size: 0vh;
       top: 42%;
       width: 10px;
       height: 10px;
@@ -35,20 +53,11 @@
       border-radius: 50%;
     }
     100%{
-        font-size: 40px;
-        width: 450px;
+        font-size: 5vh;
+        width: 500px;
         top: 0%;
-        transform: translate(-50%, -15%);
+        transform: translate(-30%, -15%);
     }
-  }
-  
-  .cauldron-svg-title{
-      display: flex;
-      font-size: 30px;
-      left: 50%;;
-      transform: translate(-50%, -15%);
-      position: absolute;
-      z-index: 30
   }
 
   .cauldron-svg-title-left{
@@ -62,7 +71,8 @@
       animation-duration: 1.5s;
       border-radius: 50%;
       z-index: 10;
-      overflow: visible
+      overflow: visible;
+      width: 100%;
     }
   
   .cauldron-svg-title-right{
@@ -76,7 +86,8 @@
       animation-duration: 1.5s;
       border-radius: 50%;
       z-index: 5;
-      overflow: visible
+      overflow: visible;
+      width: 100%
     }
 
 .cauldron-svg-animation{
@@ -88,10 +99,19 @@
     top: 15%;
     transform: translate(-50%, -15%);
     padding-bottom: 1%;
+    animation-delay: 3.2s;
+    z-index: -1;
+    animation-name: bye-cauldron-self;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
   }
 
 .cauldron-svg-container{
     width: 100%;
     position: relative;
-    height: 500px
+    height: 500px;
+    animation-delay: 3.2s;
+    animation-name: bye-cauldron;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 }
