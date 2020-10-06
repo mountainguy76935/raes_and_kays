@@ -20,16 +20,16 @@
 }
 
 .menu_title__line2{
-    font-size: 30px;
+    font-size: 5vh;
     font-weight: lighter
 }
 
 .menu_title__line3{
     padding-top: 1%;
-    font-size: 3vh;
+    font-size: 3.5vh;
     font-weight: lighter;
     color: black;
-    opacity: .6
+    opacity: .8
 }
 
 .menu_title{

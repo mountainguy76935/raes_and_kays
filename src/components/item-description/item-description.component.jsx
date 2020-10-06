@@ -10,9 +10,11 @@ export const ItemDescription = (props) => {
                 </h1>
                 <span>
                     <p>{props.item.name}</p>
-                    <p>{props.item.price}</p>
                 </span>
-                <p>{props.item.description}</p>
+                <div className='item-description-spec'>
+                    <p>{props.item.description}</p>
+                    <p>{props.item.price}</p>
+                </div>
             </div>
         </div>
     )

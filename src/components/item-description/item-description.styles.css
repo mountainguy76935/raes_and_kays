@@ -12,3 +12,19 @@
     width: 80%;
     margin: auto
 }
+
+.item-description-spec{
+    display: flex
+}
+
+.item-description-spec p{
+    text-align: left
+}
+
+.item-description-spec :nth-child(2){
+    color: black
+}
+
+.item-description-text span p{
+    color: black
+}
