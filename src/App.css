@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  font-family: 'Source Serif Pro', serif;
-  background-color: black;
-  color: white;
   font-weight: lighter;
+  background-color: rgb(240, 210, 133);
 }

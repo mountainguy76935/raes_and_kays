@@ -1,0 +1,10 @@
+.menu-item-row{
+    height: 100%;
+    display: flex;
+}
+
+.full-menu{
+    display: flex;
+    flex-direction: row wrap;
+    width: 100%
+}

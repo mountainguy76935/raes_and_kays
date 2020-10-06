@@ -6,13 +6,13 @@
 .divider-line1{
     width: 40%;
     margin-top: 15px;
-    border-top: white solid 1px;
+    border-top: #008f73 solid 1px;
 }
 
 .divider-line2{
     width: 40%;
     margin-top: 15px;
-    border-top: white solid 1px;
+    border-top: #008f73 solid 1px;
 }
 
 .end_square{
@@ -20,7 +20,7 @@
     height: 5px;
     width: 5px;
     transform: rotate(45deg);
-    background-color: white
+    background-color: #008f73
 }
 
 .end_square.right{

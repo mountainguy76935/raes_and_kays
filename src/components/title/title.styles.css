@@ -1,0 +1,39 @@
+.menu_header{
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.menu_title__line1{
+    font-size: 45px;
+    padding-top: -2%;
+    font-weight: bolder;
+    line-height: 1em;
+}
+
+.menu_header img{
+    margin-top: 46px;
+    margin-left: -31px;
+    position: absolute;
+    z-index:1;
+}
+
+.menu_title__line2{
+    font-size: 30px;
+    font-weight: lighter
+}
+
+.menu_title__line3{
+    padding-top: 1%;
+    font-size: 3vh;
+    font-weight: lighter;
+    color: black;
+    opacity: .6
+}
+
+.menu_title{
+    position: relative;
+    z-index: 10;
+    margin: auto;
+}

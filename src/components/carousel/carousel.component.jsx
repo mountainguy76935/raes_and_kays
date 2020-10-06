@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   Carousel,
   CarouselItem,
-  CarouselControl,
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
@@ -39,7 +38,7 @@ const CarouselFinal = (props) => {
         key={item.src}
       >
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={'--'} captionHeader={item.caption} />
+        <CarouselCaption captionText={''} captionHeader={item.caption} />
       </CarouselItem>
     );
   });
@@ -51,10 +50,12 @@ const CarouselFinal = (props) => {
       next={next}
       previous={previous}
     >
-      <CarouselIndicators items={CarouselData} activeIndex={activeIndex} onClickHandler={goToIndex} />
+      <CarouselIndicators
+        items={CarouselData}
+        activeIndex={activeIndex}
+        onClickHandler={goToIndex}
+      />
       {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
   );
 }

@@ -1,0 +1,14 @@
+.item-description{
+    width: 40%;
+    flex-grow: 2;
+    margin: auto
+}
+
+.item-description p{
+    font-weight: 600
+}
+
+.item-description-text{
+    width: 80%;
+    margin: auto
+}

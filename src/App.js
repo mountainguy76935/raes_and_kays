@@ -1,17 +1,13 @@
 import React from 'react';
 import './App.css';
-import { MenuPage } from './pages/menu.component';
-import { HomePage } from './pages/home-page/home.component'
-import { Navigation } from './components/navigation/navigation.component';
+import { MenuPage } from './pages/menu_page/menu_page.component';
 import { Route } from 'react-router-dom'
 
 function App() {
 
 return (
     <React.Fragment>
-      <Navigation />
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/menu' render={() => <MenuPage/>}/>
+      <Route exact path='/' render={() => <MenuPage/>}/>
     </React.Fragment>
   );
 }
