@@ -1,33 +1,31 @@
 {
   "files": {
-    "main.css": "/raes_and_kays/static/css/main.f16e3a8e.chunk.css",
-    "main.js": "/raes_and_kays/static/js/main.692e2845.chunk.js",
-    "main.js.map": "/raes_and_kays/static/js/main.692e2845.chunk.js.map",
+    "main.css": "/raes_and_kays/static/css/main.7e48aaa3.chunk.css",
+    "main.js": "/raes_and_kays/static/js/main.7d5c159e.chunk.js",
+    "main.js.map": "/raes_and_kays/static/js/main.7d5c159e.chunk.js.map",
     "runtime-main.js": "/raes_and_kays/static/js/runtime-main.11b0e880.js",
     "runtime-main.js.map": "/raes_and_kays/static/js/runtime-main.11b0e880.js.map",
     "static/css/2.829c9cb5.chunk.css": "/raes_and_kays/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.fb717788.chunk.js": "/raes_and_kays/static/js/2.fb717788.chunk.js",
-    "static/js/2.fb717788.chunk.js.map": "/raes_and_kays/static/js/2.fb717788.chunk.js.map",
+    "static/js/2.c4b1e757.chunk.js": "/raes_and_kays/static/js/2.c4b1e757.chunk.js",
+    "static/js/2.c4b1e757.chunk.js.map": "/raes_and_kays/static/js/2.c4b1e757.chunk.js.map",
     "index.html": "/raes_and_kays/index.html",
-    "precache-manifest.8a1cd1c4f6620853e9169caf82323abd.js": "/raes_and_kays/precache-manifest.8a1cd1c4f6620853e9169caf82323abd.js",
+    "precache-manifest.573b0a82435d68c60575e209abc62f61.js": "/raes_and_kays/precache-manifest.573b0a82435d68c60575e209abc62f61.js",
     "service-worker.js": "/raes_and_kays/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/raes_and_kays/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.f16e3a8e.chunk.css.map": "/raes_and_kays/static/css/main.f16e3a8e.chunk.css.map",
-    "static/js/2.fb717788.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.fb717788.chunk.js.LICENSE.txt",
+    "static/css/main.7e48aaa3.chunk.css.map": "/raes_and_kays/static/css/main.7e48aaa3.chunk.css.map",
+    "static/js/2.c4b1e757.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.c4b1e757.chunk.js.LICENSE.txt",
     "static/media/arroz.png": "/raes_and_kays/static/media/arroz.6ee8018c.png",
-    "static/media/cauldron.svg": "/raes_and_kays/static/media/cauldron.371cc4d3.svg",
     "static/media/fork_knife.jpg": "/raes_and_kays/static/media/fork_knife.ab781d0b.jpg",
     "static/media/fruit_plate.png": "/raes_and_kays/static/media/fruit_plate.4dd20e85.png",
     "static/media/pastelitos.png": "/raes_and_kays/static/media/pastelitos.20f66e3a.png",
     "static/media/pork_chop.jpg": "/raes_and_kays/static/media/pork_chop.1a7fb4a3.jpg",
-    "static/media/wine_glasses.jpg": "/raes_and_kays/static/media/wine_glasses.19a46f3f.jpg",
     "static/media/wrap.png": "/raes_and_kays/static/media/wrap.da036083.png"
   },
   "entrypoints": [
     "static/js/runtime-main.11b0e880.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.fb717788.chunk.js",
-    "static/css/main.f16e3a8e.chunk.css",
-    "static/js/main.692e2845.chunk.js"
+    "static/js/2.c4b1e757.chunk.js",
+    "static/css/main.7e48aaa3.chunk.css",
+    "static/js/main.7d5c159e.chunk.js"
   ]
 }

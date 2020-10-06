@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ddaee9379fad53d64d48393b1078e654",
+    "revision": "64f42f00a4e2bc921e548e4bb7251622",
     "url": "/raes_and_kays/index.html"
   },
   {
-    "revision": "78ee539216322f047d83",
+    "revision": "9a39145e83bd8e2ea96c",
     "url": "/raes_and_kays/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "a75ec1b0867fcb8e71c5",
-    "url": "/raes_and_kays/static/css/main.f16e3a8e.chunk.css"
+    "revision": "042d57d31ba188d46f91",
+    "url": "/raes_and_kays/static/css/main.7e48aaa3.chunk.css"
   },
   {
-    "revision": "78ee539216322f047d83",
-    "url": "/raes_and_kays/static/js/2.fb717788.chunk.js"
+    "revision": "9a39145e83bd8e2ea96c",
+    "url": "/raes_and_kays/static/js/2.c4b1e757.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/raes_and_kays/static/js/2.fb717788.chunk.js.LICENSE.txt"
+    "url": "/raes_and_kays/static/js/2.c4b1e757.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a75ec1b0867fcb8e71c5",
-    "url": "/raes_and_kays/static/js/main.692e2845.chunk.js"
+    "revision": "042d57d31ba188d46f91",
+    "url": "/raes_and_kays/static/js/main.7d5c159e.chunk.js"
   },
   {
     "revision": "de898228591f68d7c2ab",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6ee8018c2269dfa28da8ed8aa7e7070a",
     "url": "/raes_and_kays/static/media/arroz.6ee8018c.png"
-  },
-  {
-    "revision": "371cc4d3f53ba1813f0f28430ac44e83",
-    "url": "/raes_and_kays/static/media/cauldron.371cc4d3.svg"
   },
   {
     "revision": "ab781d0b6405bf65a6f64b7bc51d64c6",
@@ -50,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1a7fb4a3df64051f15d9d1ccf96a5a7e",
     "url": "/raes_and_kays/static/media/pork_chop.1a7fb4a3.jpg"
-  },
-  {
-    "revision": "19a46f3fe38bda01cda56335679d25cc",
-    "url": "/raes_and_kays/static/media/wine_glasses.19a46f3f.jpg"
   },
   {
     "revision": "da03608373c5e51b8c6cd461d3475db4",
