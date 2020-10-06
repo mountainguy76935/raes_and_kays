@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/raes_and_kays/static/css/main.9df99c94.chunk.css",
+    "main.css": "/raes_and_kays/static/css/main.e0630ea7.chunk.css",
     "main.js": "/raes_and_kays/static/js/main.7ad591f8.chunk.js",
     "main.js.map": "/raes_and_kays/static/js/main.7ad591f8.chunk.js.map",
     "runtime-main.js": "/raes_and_kays/static/js/runtime-main.11b0e880.js",
@@ -9,10 +9,10 @@
     "static/js/2.c4b1e757.chunk.js": "/raes_and_kays/static/js/2.c4b1e757.chunk.js",
     "static/js/2.c4b1e757.chunk.js.map": "/raes_and_kays/static/js/2.c4b1e757.chunk.js.map",
     "index.html": "/raes_and_kays/index.html",
-    "precache-manifest.8099c3dead6d5fc6366f5b3b7f84a5c8.js": "/raes_and_kays/precache-manifest.8099c3dead6d5fc6366f5b3b7f84a5c8.js",
+    "precache-manifest.c8e2ffe01efaee767062509dbb7c37a8.js": "/raes_and_kays/precache-manifest.c8e2ffe01efaee767062509dbb7c37a8.js",
     "service-worker.js": "/raes_and_kays/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/raes_and_kays/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.9df99c94.chunk.css.map": "/raes_and_kays/static/css/main.9df99c94.chunk.css.map",
+    "static/css/main.e0630ea7.chunk.css.map": "/raes_and_kays/static/css/main.e0630ea7.chunk.css.map",
     "static/js/2.c4b1e757.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.c4b1e757.chunk.js.LICENSE.txt",
     "static/media/arroz.png": "/raes_and_kays/static/media/arroz.6ee8018c.png",
     "static/media/fork_knife.jpg": "/raes_and_kays/static/media/fork_knife.ab781d0b.jpg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.11b0e880.js",
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.c4b1e757.chunk.js",
-    "static/css/main.9df99c94.chunk.css",
+    "static/css/main.e0630ea7.chunk.css",
     "static/js/main.7ad591f8.chunk.js"
   ]
 }
