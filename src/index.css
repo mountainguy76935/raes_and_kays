@@ -1,9 +1,9 @@
 body {
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
   overflow-y: scroll;
+  overflow-x: auto;
+  height: 100%;
   text-align: center !important;
   font-family: 'Prata', serif !important;
   background-color: #fce8ae !important;
@@ -20,11 +20,15 @@ body::-webkit-scrollbar-track {
  
 body::-webkit-scrollbar-thumb {
   background-color: #008f73;
-  outline: .4vw solid slategrey;
 }
 
 * {
   margin: 0;
+}
+
+html{
+  overflow-x: hidden;
+  height: 100%
 }
 
 code {
