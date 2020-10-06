@@ -14,17 +14,18 @@
 }
 
 .item-description-spec{
-    display: flex
+    display: flex;
 }
 
+
 .item-description-spec p{
-    text-align: left
+    text-align: left;
 }
 
 .item-description-spec :nth-child(2){
-    color: black
+    color: black;
 }
 
 .item-description-text span p{
-    color: black
+    color: black;
 }

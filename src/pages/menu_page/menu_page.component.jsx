@@ -12,14 +12,16 @@ export const MenuPage = () => {
         <React.Fragment>
             <br />
             <Title />
-            <Divider />
             <div className="menu_page">
                 {Data.map((menuItem, listNum) =>
-                    <MenuItem
-                        key={listNum}
-                        index={listNum}
-                        item={menuItem}
-                    />
+                    <React.Fragment>
+                        <Divider />
+                        <MenuItem
+                            key={listNum}
+                            index={listNum}
+                            item={menuItem}
+                        />
+                    </React.Fragment>
                 )
                 }
                 <Footer />
