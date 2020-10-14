@@ -38,7 +38,6 @@ const CarouselFinal = (props) => {
         key={item.src}
       >
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={''} captionHeader={item.caption} />
       </CarouselItem>
     );
   });

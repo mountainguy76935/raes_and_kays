@@ -1,9 +1,10 @@
 .menu_header{
-    width: 300px;
+    width: 270px;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
     position: relative;
+    margin-top: 5%
 }
 
 .menu_header img{

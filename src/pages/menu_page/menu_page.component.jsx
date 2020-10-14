@@ -31,7 +31,7 @@ export const MenuPage = () => {
                 <Title />
                 <Divider />
                 <h2><u>Entrees</u></h2>
-                <p className='menu-select'>Choose an Entree with any 3 Sides for $17</p>
+                <p className='menu-select'>Choose an Entree with any 3 Sides for $15</p>
                 <br />
                 <br />
                 {MenuData.map((menuItem, listNum) =>

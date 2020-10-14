@@ -10,11 +10,6 @@ export const CarouselData = [
         caption: 'Arroz con Gandules'
     },
     {
-        src: require('../../images/Potato_Salad.jpg'),
-        altText: "Potato Salad",
-        caption: "Potato Salad"
-    },
-    {
         src: require('../../images/Potato_Salad2.jpg'),
         altText: "Potato Salad",
         caption: "Potato Salad"
