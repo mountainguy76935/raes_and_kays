@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce05fc8dfc747f21a69ca733c11660a9",
+    "revision": "b23857cf70325a80ea423ceec74f88db",
     "url": "/raes_and_kays/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raes_and_kays/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "6f3ea4c381d43777cdc1",
+    "revision": "f33c622bb96e58d73e89",
     "url": "/raes_and_kays/static/css/main.f69d3bb7.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raes_and_kays/static/js/2.cd3ba0f4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6f3ea4c381d43777cdc1",
-    "url": "/raes_and_kays/static/js/main.28da5467.chunk.js"
+    "revision": "f33c622bb96e58d73e89",
+    "url": "/raes_and_kays/static/js/main.ab1a7aa3.chunk.js"
   },
   {
     "revision": "de898228591f68d7c2ab",
