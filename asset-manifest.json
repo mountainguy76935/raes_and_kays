@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/raes_and_kays/static/css/main.a377b877.chunk.css",
-    "main.js": "/raes_and_kays/static/js/main.c825bac8.chunk.js",
-    "main.js.map": "/raes_and_kays/static/js/main.c825bac8.chunk.js.map",
+    "main.css": "/raes_and_kays/static/css/main.3a203ba3.chunk.css",
+    "main.js": "/raes_and_kays/static/js/main.fb7b71dc.chunk.js",
+    "main.js.map": "/raes_and_kays/static/js/main.fb7b71dc.chunk.js.map",
     "runtime-main.js": "/raes_and_kays/static/js/runtime-main.11b0e880.js",
     "runtime-main.js.map": "/raes_and_kays/static/js/runtime-main.11b0e880.js.map",
     "static/css/2.829c9cb5.chunk.css": "/raes_and_kays/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.b6334c57.chunk.js": "/raes_and_kays/static/js/2.b6334c57.chunk.js",
-    "static/js/2.b6334c57.chunk.js.map": "/raes_and_kays/static/js/2.b6334c57.chunk.js.map",
+    "static/js/2.cd3ba0f4.chunk.js": "/raes_and_kays/static/js/2.cd3ba0f4.chunk.js",
+    "static/js/2.cd3ba0f4.chunk.js.map": "/raes_and_kays/static/js/2.cd3ba0f4.chunk.js.map",
     "index.html": "/raes_and_kays/index.html",
-    "precache-manifest.3e76bc9b9d0d5523423b79ace3458ae0.js": "/raes_and_kays/precache-manifest.3e76bc9b9d0d5523423b79ace3458ae0.js",
+    "precache-manifest.93e972a018a9f33ab3d4bfe8b290546e.js": "/raes_and_kays/precache-manifest.93e972a018a9f33ab3d4bfe8b290546e.js",
     "service-worker.js": "/raes_and_kays/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/raes_and_kays/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.a377b877.chunk.css.map": "/raes_and_kays/static/css/main.a377b877.chunk.css.map",
-    "static/js/2.b6334c57.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.b6334c57.chunk.js.LICENSE.txt",
+    "static/css/main.3a203ba3.chunk.css.map": "/raes_and_kays/static/css/main.3a203ba3.chunk.css.map",
+    "static/js/2.cd3ba0f4.chunk.js.LICENSE.txt": "/raes_and_kays/static/js/2.cd3ba0f4.chunk.js.LICENSE.txt",
     "static/media/BBQ_Chicken.jpg": "/raes_and_kays/static/media/BBQ_Chicken.e6a179d1.jpg",
     "static/media/Chicken_Edited.jpg": "/raes_and_kays/static/media/Chicken_Edited.38531335.jpg",
     "static/media/Full_dish.jpg": "/raes_and_kays/static/media/Full_dish.f33fa7a4.jpg",
     "static/media/Macaroni_Salad.jpg": "/raes_and_kays/static/media/Macaroni_Salad.f69e33b7.jpg",
-    "static/media/Potato_Salad.jpg": "/raes_and_kays/static/media/Potato_Salad.72819ac7.jpg",
     "static/media/Potato_Salad2.jpg": "/raes_and_kays/static/media/Potato_Salad2.8fd19857.jpg",
     "static/media/Rae_And_Kay.jpeg": "/raes_and_kays/static/media/Rae_And_Kay.e53b6535.jpeg",
     "static/media/Ribs.jpg": "/raes_and_kays/static/media/Ribs.61d5e451.jpg",
@@ -32,8 +31,8 @@
   "entrypoints": [
     "static/js/runtime-main.11b0e880.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.b6334c57.chunk.js",
-    "static/css/main.a377b877.chunk.css",
-    "static/js/main.c825bac8.chunk.js"
+    "static/js/2.cd3ba0f4.chunk.js",
+    "static/css/main.3a203ba3.chunk.css",
+    "static/js/main.fb7b71dc.chunk.js"
   ]
 }

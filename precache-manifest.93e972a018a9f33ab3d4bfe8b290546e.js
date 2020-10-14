@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8c9a7048792a58fe687f0ac92f1f8ccd",
+    "revision": "452e1591c592db0a9ff05ac45cc0c45d",
     "url": "/raes_and_kays/index.html"
   },
   {
-    "revision": "60b7ec8ddb2124d9f12e",
+    "revision": "f5412ab047f22b3c47c8",
     "url": "/raes_and_kays/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "1f20d0dd77fb47cd5024",
-    "url": "/raes_and_kays/static/css/main.a377b877.chunk.css"
+    "revision": "7dd57ca235990e0c10a6",
+    "url": "/raes_and_kays/static/css/main.3a203ba3.chunk.css"
   },
   {
-    "revision": "60b7ec8ddb2124d9f12e",
-    "url": "/raes_and_kays/static/js/2.b6334c57.chunk.js"
+    "revision": "f5412ab047f22b3c47c8",
+    "url": "/raes_and_kays/static/js/2.cd3ba0f4.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/raes_and_kays/static/js/2.b6334c57.chunk.js.LICENSE.txt"
+    "url": "/raes_and_kays/static/js/2.cd3ba0f4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1f20d0dd77fb47cd5024",
-    "url": "/raes_and_kays/static/js/main.c825bac8.chunk.js"
+    "revision": "7dd57ca235990e0c10a6",
+    "url": "/raes_and_kays/static/js/main.fb7b71dc.chunk.js"
   },
   {
     "revision": "de898228591f68d7c2ab",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f69e33b788bc5f88cccbdfc8b8bac5c9",
     "url": "/raes_and_kays/static/media/Macaroni_Salad.f69e33b7.jpg"
-  },
-  {
-    "revision": "72819ac7e1860743d27a0ab17992323b",
-    "url": "/raes_and_kays/static/media/Potato_Salad.72819ac7.jpg"
   },
   {
     "revision": "8fd198574a967df581ed0f6348e9c21b",
