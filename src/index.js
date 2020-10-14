@@ -6,8 +6,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Router basename='/raes_and_kays/'>
-    <App />
+  <Router>
+    <App base="/raes_and_kays/"/>
   </Router>,
   document.getElementById('root')
 );
