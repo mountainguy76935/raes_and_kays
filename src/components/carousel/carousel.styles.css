@@ -6,7 +6,7 @@
     height: 400px;
     padding: 3%;
     flex-grow: 1;
-    margin: auto;
+    margin: auto;    
 }
 
 .carousel-caption.d-none.d-md-block{

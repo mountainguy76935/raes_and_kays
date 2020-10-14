@@ -24,6 +24,8 @@ export const HomePage = () => {
                 </div>
                 )
             })}
+            <br />
+            <br />
             <Footer />
         </div>
     )

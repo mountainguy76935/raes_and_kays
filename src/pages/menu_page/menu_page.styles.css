@@ -48,7 +48,6 @@
 }
 
 .menu_page{
-    padding-top: 5%;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -70,7 +69,7 @@
     min-width: 300px;
 }
 
-.menu_page h4{
+.menu_page h4,h2{
     color: black;
 }
 

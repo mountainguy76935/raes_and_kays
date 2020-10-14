@@ -37,14 +37,16 @@
     font-weight: bold;
     word-wrap: normal;
     display: block;
+    margin-top: 5%;
+    line-height: 2em
 }
 
 .about_paragraph img{
     float: left;
     margin: 0% 2.5% 2.5% 2.5%;
-    max-width: 65%
+    max-width: 90%;
 }
 
 .floated_text{
-    float: right
+    float: right;
 }
