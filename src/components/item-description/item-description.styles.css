@@ -1,7 +1,8 @@
 .item-description{
     width: 40%;
     flex-grow: 2;
-    margin: auto
+    margin: auto;
+    min-width: 250px;
 }
 
 .item-description p{
@@ -9,8 +10,13 @@
 }
 
 .item-description-text{
-    width: 80%;
-    margin: auto
+    width: 50%;
+    margin: auto;
+    min-width: 275px;
+}
+
+.item-description-text h3{
+    color: black;
 }
 
 .item-description-spec{
@@ -19,13 +25,6 @@
 
 
 .item-description-spec p{
+    margin: auto;
     text-align: left;
-}
-
-.item-description-spec :nth-child(2){
-    color: black;
-}
-
-.item-description-text span p{
-    color: black;
 }

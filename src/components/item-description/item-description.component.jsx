@@ -5,15 +5,11 @@ export const ItemDescription = (props) => {
     return (
         <div className='item-description'>
             <div className='item-description-text'>
-                <h1>
-                    {props.item.day}
-                </h1>
-                <span>
-                    <p>{props.item.name}</p>
-                </span>
+                <h3>
+                    {props.item.name}
+                </h3>
                 <div className='item-description-spec'>
                     <p>{props.item.description}</p>
-                    <p>{props.item.price}</p>
                 </div>
             </div>
         </div>

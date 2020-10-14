@@ -1,0 +1,50 @@
+.home_page{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 7.5rem;
+    max-width: 100%
+}
+
+.home-opening{
+    font-size: 4em;
+    color: black;
+    opacity: .8;
+    width: 6em;
+    margin: auto;
+    line-height: 1.3em;
+}
+
+.home-description{
+    font-size: 1em;
+    color: black;
+    opacity: .8;
+    width: 15em;
+    margin: auto;
+    line-height: 1.3em;
+    margin-bottom: 3%;
+}
+
+.about_paragraph{
+    color: black;
+    text-align: left;
+    width: 80%;
+    min-width: 250px;
+    margin: auto;
+    font-weight: bold;
+    word-wrap: normal;
+    display: block;
+}
+
+.about_paragraph img{
+    float: left;
+    margin: 0% 2.5% 2.5% 2.5%;
+    max-width: 65%
+}
+
+.floated_text{
+    float: right
+}

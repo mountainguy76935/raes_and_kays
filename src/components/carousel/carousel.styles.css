@@ -1,11 +1,12 @@
 .carousel-images{
     display: flex;
     text-align: center;
-    width: 50%;
-    min-width: 300px;
+    width: 100%;
+    min-width: 270px;
     height: 400px;
     padding: 3%;
-    flex-grow: 1
+    flex-grow: 1;
+    margin: auto;
 }
 
 .carousel-caption.d-none.d-md-block{

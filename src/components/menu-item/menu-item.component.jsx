@@ -4,14 +4,15 @@ import { ItemDescription } from '../item-description/item-description.component'
 import './menu-item.styles.css';
 
 export const MenuItem = (props) => {
-    React.useEffect(() => console.log(props))
-
     return (
         <React.Fragment>
             {
                 props.index % 2 !== 0 ?
                     <div className='menu-item-row' style={{flexFlow: 'row wrap-reverse'}}>
-                        <CarouselFinal />
+                        <img 
+                            src={props.item.image} 
+                            alt={props.item.name} 
+                        />
                         <ItemDescription
                             {...props}
                         />
@@ -20,7 +21,10 @@ export const MenuItem = (props) => {
                         <ItemDescription
                             {...props}
                         />
-                        <CarouselFinal />
+                        <img 
+                            src={props.item.image} 
+                            alt={props.item.name} 
+                        />
                     </div>
             }
         </React.Fragment>

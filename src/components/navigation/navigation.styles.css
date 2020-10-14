@@ -1,0 +1,36 @@
+.row{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 50;
+    transition: .3s;
+    background-color: #008f73;
+    width: 100%;
+}
+
+.row.active{
+    margin-left: -70px;
+    width: 0%;
+    font-weight: lighter;
+    opacity: 0;
+}
+
+.linkClass{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition-duration: .2s;
+    z-index: 40
+}
+
+.linkClass.active{
+    font-size: 10px;
+    transition-duration: .4s
+}
+
+.linkClass:hover{
+    text-decoration: none;
+    color: white;
+    transition-timing-function: ease-in;
+}
