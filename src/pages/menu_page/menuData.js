@@ -16,7 +16,7 @@ export const MenuData = [
 },
 {
     name: 'Rellenos de Papa',
-    description: 'Perfectly Seasoned Organic BBQ Chicken & Cornbread',
+    description: 'Stuffed Potato, Groud Beef, Veggies (ask about GF options)',
     image: require('../../images/rellenos.png')
 },
 {
