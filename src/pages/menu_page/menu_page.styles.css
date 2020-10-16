@@ -59,6 +59,7 @@
     min-height: 100%;
     padding-bottom: 7.5rem;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .menu-select{
@@ -86,4 +87,11 @@
 .sides-block p{
     font-size: 15px;
     font-weight: bold;
+}
+
+.disclaimer{
+    color: black;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
 }

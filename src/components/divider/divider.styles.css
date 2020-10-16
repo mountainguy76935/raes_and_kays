@@ -3,13 +3,7 @@
     justify-content: center;
 }
 
-.divider-line1{
-    width: 40%;
-    margin-top: 15px;
-    border-top: #008f73 solid 1px;
-}
-
-.divider-line2{
+.divider-line{
     width: 40%;
     margin-top: 15px;
     border-top: #008f73 solid 1px;

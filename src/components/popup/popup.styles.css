@@ -3,28 +3,46 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: grey;
-    min-width: 70%;
+    min-width: 275px;
     min-height: 50%;
+    width: 60%;
     z-index: 100;
-    opacity: .8;
     border: black solid 1px;
+    text-align: center;
+    background-image: url('../../images/confetti.png');
+    background-color: white;
+    overflow-wrap: break-word;
+    opacity: .95
 }
 
-.pop-up.active{
-    min-width: 0%;
-    min-height: 0%
+.pop-up-text{
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    padding: 5%;
+    z-index: 10;
+    color: black;
+    font-weight: bold;
+    opacity: 1
 }
 
 .close{
     position: relative;
     float: right;
-    padding: .8%;
+    padding: 2%;
     color: black;
     cursor: pointer;
-    transition-duration: .2s;
+    font-size: 50px;
 }
 
 .close:hover{
-    color: red
+    color: red;
+}
+
+.pop-up ul{
+    list-style-type: none;   
+}
+
+.popup-medium{
+    width: 80%;
 }

@@ -10,6 +10,7 @@ export const Hamburger = (props) => {
         >
             <div className={!props.toggled ? "line" : 'line active'}></div>
             <div className={!props.toggled ? "line bel" : 'line bel active'}></div>
+            <div className={!props.toggled ? "line bel" : 'line bel2 active'}></div>
         </div>
     )
 }

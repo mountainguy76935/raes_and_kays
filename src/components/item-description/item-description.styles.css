@@ -19,12 +19,9 @@
     color: black;
 }
 
-.item-description-spec{
-    display: flex;
-}
-
 
 .item-description-spec p{
     margin: auto;
     text-align: left;
+    margin-bottom: 10%;
 }

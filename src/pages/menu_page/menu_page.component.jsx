@@ -58,7 +58,7 @@ export const MenuPage = () => {
                         }
                     </div>
                     <div className='sides-carousel'>
-                    <CarouselFinal />
+                        <CarouselFinal />
                     </div>
                     <div className='sides-right'>
                         <h4><u>Soul Sides</u></h4>
@@ -71,6 +71,10 @@ export const MenuPage = () => {
                         })
                         }
                     </div>
+                </div>
+                <br />
+                <div className='disclaimer'>
+                    <p>*Ask us about our GF and vegetarian options! All meat served is organic and all produce has been locally sourced.</p>
                 </div>
                 <br />
                 <Footer />

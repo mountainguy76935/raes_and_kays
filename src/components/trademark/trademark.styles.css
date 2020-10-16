@@ -1,0 +1,10 @@
+.trademark{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60%;
+}
+
+.trademark p{
+    font-size: .6em;
+}

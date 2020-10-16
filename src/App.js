@@ -5,13 +5,22 @@ import { Route } from 'react-router-dom'
 import { Navigation } from './components/navigation/navigation.component';
 import { HomePage } from './pages/home_page/home_page.component';
 
-function App() {
+const App = () => {
 
-return (
+  const [popupViewed, setPopupViewed] = React.useState(false)
+
+  return (
     <div className='App'>
       <Navigation />
-      <Route exact path='/' render={() => <HomePage/>}/>
-      <Route exact path='/menu' render={() => <MenuPage/>}/>
+      <Route
+        exact
+        path='/'
+        render={() =>
+          <HomePage
+            popup={popupViewed}
+            handleClose={setPopupViewed}
+          />} />
+      <Route exact path='/menu' render={() => <MenuPage />} />
     </div>
   );
 }

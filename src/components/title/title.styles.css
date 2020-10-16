@@ -4,7 +4,8 @@
     display: flex;
     flex-flow: row nowrap;
     position: relative;
-    margin-top: 5%
+    margin-top: 5%;
+    font-family: 'Prata', serif;
 }
 
 .menu_header img{

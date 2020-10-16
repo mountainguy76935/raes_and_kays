@@ -1,0 +1,14 @@
+.social_image{
+    float: left;
+    display: flex;
+    padding-bottom: 30px;
+    margin: auto
+}
+
+.social_image img{
+    margin: -40%
+}
+
+.social_image a{
+    padding: 5%
+}

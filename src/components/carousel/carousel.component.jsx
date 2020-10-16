@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import {
   Carousel,
   CarouselItem,
-  CarouselIndicators,
-  CarouselCaption
+  CarouselIndicators
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './carousel.styles.css';

@@ -2,9 +2,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
-  text-align: center !important;
+  text-align: center;
   font-family: 'Prata', serif !important;
-  background-color: #fce8ae !important;
+  background-color: rgb(238, 218, 167) !important;
   color: #b2464a !important;
 }
 

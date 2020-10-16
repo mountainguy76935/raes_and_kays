@@ -1,18 +1,18 @@
 .nav-hamburger{
-    position: fixed;
+    position: absolute;
     z-index: 60;
     transition-duration: .3s;
     width: auto;
-    height: 35px;
+    height: 40px;
     cursor: pointer;
-    padding: .5vh;
+    padding: 1.2vw;
   }
 
 .line{
     border-radius: 20%;
     margin-top: 0px;
     width: 35px;
-    height: 7px;
+    height: 3px;
     background-color: #b2464a;
     transition-duration: .3s;
     opacity: .8
@@ -33,5 +33,10 @@
 
 .line.bel.active{
     transform: translate(0px, -30px);
+    margin-top: 0px;
+}
+
+.line.bel2.active{
+    transform: translate(0px, -60px);
     margin-top: 0px;
 }
