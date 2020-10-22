@@ -10,7 +10,7 @@ export const SocialLogos = () => {
             'facebook link'
         ],
         [
-            'href',
+            'https://www.instagram.com/raesandkays/?igshid=hp2vy0ffsagi',
             'https://cdn.worldvectorlogo.com/logos/instagram-2016.svg',
             'instagram link'
         ],

@@ -17,6 +17,13 @@ export const Navigation = (props) => {
         }
     }
 
+    const handleClick = (toggle) => {
+        if (!props.popupViewed) {
+            props.setPopupViewed(true)
+        }
+        setToggled(toggle)
+    }
+
     React.useEffect(() => {
         document.addEventListener('mousedown', handleClickOff)
         return () => document.removeEventListener('mousedown', handleClickOff)
@@ -41,7 +48,7 @@ export const Navigation = (props) => {
     return (
         <div ref={node}>
             <Hamburger
-                handleClick={setToggled}
+                handleClick={handleClick}
                 toggled={toggled}
             />
             <div className={toggled ? 'row' : 'row active'}>

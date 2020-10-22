@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Navigation />
+      <Navigation popupViewed={popupViewed} setPopupViewed={setPopupViewed}/>
       <Route
         exact
         path='/'

@@ -74,7 +74,7 @@ export const MenuPage = () => {
                 </div>
                 <br />
                 <div className='disclaimer'>
-                    <p>*Ask us about our GF and vegetarian options! All meat served is organic and all produce has been locally sourced.</p>
+                    <p>*Ask us about our GF and vegetarian options! Our chicken is organic and all produce has been locally sourced.</p>
                 </div>
                 <br />
                 <Footer />
