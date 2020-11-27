@@ -4,15 +4,32 @@
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 275px;
-    min-height: 50%;
+    max-height: 80%;
     width: 60%;
     z-index: 100;
     border: black solid 1px;
     text-align: center;
-    background-image: url('../../images/confetti.png');
-    background-color: white;
     overflow-wrap: break-word;
-    opacity: .95
+    overflow-y: scroll;
+    background-color: white;
+    font-family: 'Prata', serif;
+    box-shadow:
+  0 2.8px 2.2px rgba(66, 57, 57, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.popup_images{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.popup-images img{
+    width: 220px;
+    min-width: 50%;
 }
 
 .pop-up-text{
@@ -26,13 +43,21 @@
     opacity: 1
 }
 
+.pop-up-text img{
+    padding: 3%
+}
+
 .close{
     position: relative;
     float: right;
-    padding: 2%;
     color: black;
     cursor: pointer;
-    font-size: 50px;
+    border: black solid 1px;
+    border-radius: 50%;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    margin: 1%
 }
 
 .close:hover{
@@ -46,3 +71,16 @@
 .popup-medium{
     width: 80%;
 }
+
+
+.pop-up::-webkit-scrollbar {
+    width: .4vw;
+  }
+   
+  .pop-up::-webkit-scrollbar-track {
+    box-shadow: transparent;
+  }
+   
+  .pop-up::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }

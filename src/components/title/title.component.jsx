@@ -5,6 +5,7 @@ import Leaf from '../../images/leaf.png'
 export const Title = (props) =>
     <div className='menu_header'>
         <img
+            alt="leaf"
             src={Leaf}
             width='90px'
             height='90px'

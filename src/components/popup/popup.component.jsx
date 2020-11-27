@@ -8,10 +8,15 @@ export const PopUp = (props) => {
                 x
             </p>
             <div className="pop-up-text">
-                <h1>Grand Opening!</h1>
-                <p>Please join us for our grand opening on October 24th. We are taking preorders now and will be available to take your orders on the 24th between 12 and 4.</p>
+                <h1>New Special</h1>
+                <p>Now serving BBQ and Buffalo Chicken with Fries! Visit our menu for more information.</p>
+                <p>To Order:</p>
                 <p>phone: (303) 517-7146</p>
                 <p>email: raesandkays@gmail.com</p>
+                <div className="popup-images">
+                    <img alt='wings_1' src={require('../../images/wings_1.PNG')} />
+                    <img alt='wings_2' src={require('../../images/wings_2.PNG')} />
+                </div>
             </div>
         </div>
     )

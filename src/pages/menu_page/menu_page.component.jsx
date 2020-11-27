@@ -1,40 +1,26 @@
 import React from 'react';
-import './menu_page.styles.css';
 import { Divider } from '../../components/divider/divider.component';
 import { MenuItem } from '../../components/menu-item/menu-item.component';
 import { Footer } from '../../components/footer/footer.component';
-import CarouselFinal from '../../components/carousel/carousel.component';
 import { Title } from '../../components/title/title.component';
-import { MenuData } from './menuData';
+import { MenuStyle } from '../../components/menu/menu-style.component';
+import { MenuSides } from '../../components/sides/menu-sides.component';
+import { MenuSelect } from '../../components/menu/menu-select.component';
+import { MenuDisclaimer } from '../../components/menu/menu-disclaimer.component'
 
-export const MenuPage = () => {
-    const prSides = [
-        'Arroz con Gandules (Puerto Rican Rice w/ Pigeon Peas)',
-        'Puerto Rican Rice & Beans',
-        'Authentic Puerto Rican Monfongo (Garlic Flavored Mashed Plantains with Chichotonnes)',
-        'Tostones (Fried Green Plantains with a Cilantro Garlic Sauce)'
-    ]
-
-    const soulSides = [
-        'Potato Salad',
-        'Macaroni Salad',
-        'Collard Greens',
-        "Momma's Mac & Cheese",
-        "Sweet Potatoes",
-        'Side Salad',
-        'Black Eyed Peas',
-    ]
-
-    return (
-        <React.Fragment>
-            <div className="menu_page">
-                <Title />
-                <Divider />
-                <h2><u>Entrees</u></h2>
-                <p className='menu-select'>Choose an Entree with any 3 Sides for $15</p>
-                <br />
-                <br />
-                {MenuData.map((menuItem, listNum) =>
+export const MenuPage = (props) => (
+    <React.Fragment>
+        <MenuStyle>
+            <Title />
+            <Divider />
+            <h2><u>Entrees</u></h2>
+            <MenuSelect>
+                {props.data.description} ${props.data.price}
+            </MenuSelect>
+            <br />
+            <br />
+            {props.data.entreeItems ?
+                props.data.entreeItems.map((menuItem, listNum) =>
                     <React.Fragment key={listNum}>
                         <MenuItem
                             key={listNum}
@@ -43,42 +29,20 @@ export const MenuPage = () => {
                         />
                         <Divider />
                     </React.Fragment>
-                )
-                }
-                <div className="sides-block">
-                    <div className='sides-left'>
-                        <h4><u>Puerto Rican Sides</u></h4>
-                        {prSides.map((item, index) => {
-                            return (
-                                <React.Fragment key={index}>
-                                    <p>{item}</p>
-                                </React.Fragment>
-                            )
-                        })
-                        }
-                    </div>
-                    <div className='sides-carousel'>
-                        <CarouselFinal />
-                    </div>
-                    <div className='sides-right'>
-                        <h4><u>Soul Sides</u></h4>
-                        {soulSides.map((item, index) => {
-                            return (
-                                <React.Fragment key={index}>
-                                    <p>{item}</p>
-                                </React.Fragment>
-                            )
-                        })
-                        }
-                    </div>
-                </div>
-                <br />
-                <div className='disclaimer'>
-                    <p>*Ask us about our GF and vegetarian options! Our chicken is organic and all produce has been locally sourced.</p>
-                </div>
-                <br />
-                <Footer />
-            </div>
-        </React.Fragment>
-    )
-}
+                ) : null
+            }
+            {props.data.sideItems ? 
+            <MenuSides 
+            sides={props.data.sideItems} 
+            carousel={props.data.carouselItems}
+            /> : 
+            null}
+            <br />
+            <MenuDisclaimer>
+                <p>*{props.data.disclaimer}</p>
+            </MenuDisclaimer>
+            <br />
+            <Footer />
+        </MenuStyle>
+    </React.Fragment>
+)

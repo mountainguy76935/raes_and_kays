@@ -6,21 +6,20 @@ import {
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './carousel.styles.css';
-import { CarouselData } from './carousel_data'
 
-const CarouselFinal = (props) => {
+const CarouselFinal = props => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
   const next = () => {
     if (animating) return;
-    const nextIndex = activeIndex === CarouselData.length - 1 ? 0 : activeIndex + 1;
+    const nextIndex = activeIndex === props.data.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   }
 
   const previous = () => {
     if (animating) return;
-    const nextIndex = activeIndex === 0 ? CarouselData.length - 1 : activeIndex - 1;
+    const nextIndex = activeIndex === 0 ? props.data.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   }
 
@@ -29,14 +28,14 @@ const CarouselFinal = (props) => {
     setActiveIndex(newIndex);
   }
 
-  const slides = CarouselData.map((item) => {
+  const slides = props.data.map((item) => {
     return (
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={item.src}
+        key={item.image}
       >
-        <img src={item.src} alt={item.altText} />
+        <img src={item.image} alt={item.name} />
       </CarouselItem>
     );
   });
@@ -49,7 +48,7 @@ const CarouselFinal = (props) => {
       previous={previous}
     >
       <CarouselIndicators
-        items={CarouselData}
+        items={props.data}
         activeIndex={activeIndex}
         onClickHandler={goToIndex}
       />

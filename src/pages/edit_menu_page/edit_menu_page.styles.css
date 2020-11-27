@@ -1,0 +1,18 @@
+.edit_page{
+    padding: 5%
+}
+
+.edit_page input{
+    width: 80%
+}
+
+.edit-details{
+    display: flex;
+    width: 200px;
+    margin: auto
+}
+
+.edit-add{
+    padding: 10px;
+    margin: 10px;
+}

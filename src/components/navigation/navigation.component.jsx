@@ -9,7 +9,6 @@ export const Navigation = (props) => {
     const [toggled, setToggled] = React.useState(false)
 
     const handleClickOff = (e) => {
-        e.preventDefault();
         if (!node.current.contains(e.target)) {
             setToggled(false)
         } else {

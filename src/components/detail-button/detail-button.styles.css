@@ -1,0 +1,41 @@
+.detail-button{
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.fa{
+    padding: .3em;
+    border-radius: 50%;
+    transition-duration: .3s;
+    font-size: 1.3em;
+}
+
+.fa-trash{
+    color: red;
+}
+
+.fa-trash.active{
+    background-color: red;
+    color:  #F8F8FF;
+}
+
+.fa-edit{
+    color: #008f73;
+}
+
+.fa-edit.active{
+    background-color: #008f73;
+    color:  #F8F8FF;
+}
+
+.fa-plus{
+    color: rgb(76, 76, 212);
+    margin-top: .3em;
+}
+
+.fa-plus.active{
+    background-color: rgb(76, 76, 212);
+    color:  #F8F8FF;
+}

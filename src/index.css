@@ -8,6 +8,10 @@ body {
   color: #b2464a !important;
 }
 
+h4{
+  color: black !important
+}
+
 body::-webkit-scrollbar {
   width: .4vw;
 }
