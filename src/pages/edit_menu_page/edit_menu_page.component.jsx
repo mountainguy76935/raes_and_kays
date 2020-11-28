@@ -56,13 +56,10 @@ const EditMenuPage = (props) => {
         //eslint-disable-next-line
     }, [])
 
-    React.useEffect(() => {
-        console.log(entreeItems)
-    }, [entreeItems])
-
     const handleSubmitCarousel = (i, data) => {
         const newArray = [...carouselItems];
         let itemRef = newArray[i];
+        console.log('in carousel', data)
         itemRef.name = data.name;
         itemRef.image = data.image;
         delete itemRef.edit
@@ -70,6 +67,7 @@ const EditMenuPage = (props) => {
     }
 
     const handleSubmitNew = (i, data) => {
+        console.log('in new', data, entreeItems)
         const newArray = [...entreeItems];
         let itemRef = newArray[i];
         itemRef.name = data.name;
@@ -92,7 +90,6 @@ const EditMenuPage = (props) => {
 
     const handleSubmitMenu = () => {
         const data = new FormData();
-        console.log(carouselItems)
         data.append('openDates', JSON.stringify(openDates))
         data.append('popup', JSON.stringify(popup))
         entreeItems.map(item => data.append('entreeImage', item.image))
@@ -105,7 +102,10 @@ const EditMenuPage = (props) => {
         data.append('carouselItems', JSON.stringify(carouselItems))
         fetch(process.env.REACT_APP_SOURCE + '/post-menu', {
             method: "POST",
-            body: data
+            body: data,
+            headers: {
+                Authorization: 'bearer ' + localStorage.getItem('token')
+            }
         })
             .then((res) => res.json())
             .then(response => {
@@ -213,13 +213,16 @@ const EditMenuPage = (props) => {
                 )) :
                 null
             }
-            <div className="edit-add">
-                <h4>Want to add more entree items? Hit the plus sign!</h4>
-                <DetailButton
-                    purpose="add"
-                    handleClick={() => handleAdd(entreeItems, setEntreeItems)}
-                />
-            </div>
+            <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => handleAdd(entreeItems, setEntreeItems)}
+                style={{ width: '200px', margin: 'auto' }}
+            >
+                Add more Entree Items
+            </Button>
+            <br />
+            <Divider />
             <EditSides
                 sides={sideItems}
                 setSides={setSideItems}
@@ -240,7 +243,6 @@ const EditMenuPage = (props) => {
                 color="primary"
                 onClick={handleSubmitMenu}
                 style={{ width: '200px', margin: 'auto' }}
-
             >
                 Ready? Submit everything by clicking here!
             </Button>

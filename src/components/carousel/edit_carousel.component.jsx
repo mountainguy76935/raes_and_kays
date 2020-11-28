@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import { UploadPhoto } from '../upload_photo/upload_photo.component';
 import { TextareaAutosize } from '@material-ui/core';
+import { EditForm } from '../edit-form/edit-form.component';
 
 export const EditCarousel = (props) => {
     const [image, setImage] = React.useState('');
@@ -24,7 +25,6 @@ export const EditCarousel = (props) => {
     const handleImage = async (e) => {
         e.preventDefault();
         const file = e.target.files[0];
-        console.log(props.carouselItems)
         props.handleImage(props.index, file, props.carouselItems, props.setCarouselItems);
         setImage(file);
         if (window.FileReader) {

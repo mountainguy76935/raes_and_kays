@@ -28,17 +28,17 @@ export const MenuItem = (props) => {
     const [itemDescription, setItemDescription] = React.useState('')
 
     const handleSubmit = () => {
-        const item = {
+        const data = {
             name: itemName,
             description: itemDescription
         }
-        props.handleSubmitNew(props.index, item)
+        props.handleSubmitNew(props.index, data)
     }
 
     React.useEffect(() => {
         setItemName(props.item.name);
         setItemDescription(props.item.description)
-    }, [props])
+    }, [])
 
     const handleImage = async (e) => {
         e.preventDefault();

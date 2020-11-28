@@ -25,7 +25,7 @@ export const EditForm = (props) => {
             <TextareaAutosize
                 aria-label="empty textarea"
                 cols={40}
-                label={`${props.genre} Sides`}
+                placeholder={`${props.genre} Sides`}
                 type={props.type}
                 onChange={e => setName(e.target.value)}
                 value={name}

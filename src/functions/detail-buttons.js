@@ -7,6 +7,9 @@ export const handleEdit = (index, array, cb) => {
 }
 
 export const handleAdd = (array, cb, options={}) => {
+    if (array.length > 20) {
+        return
+    }
     let newArray = [...array];
     newArray.push(options)
     cb(newArray)

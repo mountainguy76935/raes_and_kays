@@ -1,6 +1,4 @@
 import React from 'react';
-import { SidesRight } from './sides-right.component';
-import { SidesLeft } from './sides-left.component';
 import { DetailButton } from '../detail-button/detail-button.component';
 import { handleEdit, handleAdd, handleDelete } from '../../functions/detail-buttons';
 import { ConfirmDialog } from '../../components/confirm_dialog/confirm_dialog.component';
@@ -16,10 +14,19 @@ const SidesEdit = styled.div`
         margin: auto;
     `
 
+const Sides = styled.div`
+    width: 20%;
+    min-width: 250px;
+    font-weight: bold;
+    height: 100%;
+`
+
 const EditSidesBlock = styled.div`
-    display: grid;
-    grid-template-columns: 100%;
-    padding: 3%; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto
 `
 
 const EditCarouselBlock = styled.div`
@@ -31,20 +38,6 @@ const EditCarouselBlock = styled.div`
 const EditCarouselItem = styled.div`
     margin: auto;
     padding-bottom: 5%;
-`
-
-const AddMore = styled.div`
-    padding: .5em;
-    border-radius: 5%;
-    width: 150px;
-    margin: auto;
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12)
 `
 
 const SideGenre = (props) => {
@@ -59,7 +52,15 @@ const SideGenre = (props) => {
         let source = result.source.index
         const [newItem] = newItems.splice(source, 1)
         newItems.splice(destination, 0, newItem)
-        props.setSidesGenre([...newItems])
+        let newSides = [...props.sides].filter(a => a.genre !== props.genre);
+        newSides = [...newSides, ...newItems]
+        props.setSides(newSides)
+    }
+
+    const handleFunction = (item, cb) => {
+        let index;
+        index = props.sides.findIndex(a => a.name === item)
+        cb(index, props.sides, props.setSides)
     }
 
     return (
@@ -78,8 +79,8 @@ const SideGenre = (props) => {
             >
                 Change the order of the {props.genre} sides!
                 </Button>
-                <br />
-                <br />
+            <br />
+            <br />
             <h4><u>{props.genre} Sides</u></h4>
             {props.sidesGenre[0] ?
                 props.sidesGenre.map((item, index) => {
@@ -87,7 +88,7 @@ const SideGenre = (props) => {
                         <SidesEdit key={index}>
                             <DetailButton
                                 purpose="delete"
-                                handleClick={() => props.handleFunction(item.name, handleDelete)}
+                                handleClick={() => handleFunction(item.name, handleDelete)}
                             />
                             <DetailButton
                                 purpose="edit"
@@ -109,13 +110,14 @@ const SideGenre = (props) => {
                     )
                 }) : null
             }
-            <AddMore>
-                <h4>Add More Sides!</h4>
-                <DetailButton
-                    purpose="add"
-                    handleClick={() => handleAdd(props.sides, props.setSides, { name: 'insert side here!', genre: props.genre })}
-                />
-            </AddMore>
+            <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => handleAdd(props.sides, props.setSides, { name: 'insert side here!', genre: props.genre })}
+                style={{ width: '200px', margin: 'auto' }}
+            >
+                Add more {props.genre} Sides
+            </Button>
         </React.Fragment>
     )
 }
@@ -137,12 +139,6 @@ export const EditSides = (props) => {
         props.setSides(newSides)
     }
 
-    const handleFunction = (item, cb) => {
-        let index;
-        index = props.sides.findIndex(a => a.name === item)
-        cb(index, props.sides, props.setSides)
-    }
-
     React.useEffect(() => {
         if (!props.sides) {
             return;
@@ -153,30 +149,30 @@ export const EditSides = (props) => {
     }, [props.sides])
 
     return (
-        <EditSidesBlock>
-            <SidesLeft>
-                <SideGenre
-                    genre={'Puerto Rican'}
-                    sidesGenre={prSides}
-                    setSidesGenre={setPrSides}
-                    handleSubmit={handleSubmit}
-                    handleFunction={handleFunction}
-                    sides={props.sides}
-                    setSides={props.setSides}
-                />
-            </SidesLeft>
-            <br />
-            <SidesRight>
-                <SideGenre
-                    genre={'Soul'}
-                    sidesGenre={soulSides}
-                    setSidesGenre={setSoulSides}
-                    handleSubmit={handleSubmit}
-                    handleFunction={handleFunction}
-                    sides={props.sides}
-                    setSides={props.setSides}
-                />
-            </SidesRight>
+        <React.Fragment>
+            <EditSidesBlock>
+                <Sides>
+                    <SideGenre
+                        genre={'Puerto Rican'}
+                        sidesGenre={prSides}
+                        setSidesGenre={setPrSides}
+                        handleSubmit={handleSubmit}
+                        sides={props.sides}
+                        setSides={props.setSides}
+                    />
+                </Sides>
+                <br />
+                <Sides>
+                    <SideGenre
+                        genre={'Soul'}
+                        sidesGenre={soulSides}
+                        setSidesGenre={setSoulSides}
+                        handleSubmit={handleSubmit}
+                        sides={props.sides}
+                        setSides={props.setSides}
+                    />
+                </Sides>
+            </EditSidesBlock>
             <Divider />
             <h4>Carousel Pictures</h4>
             <EditCarouselBlock>
@@ -220,13 +216,15 @@ export const EditSides = (props) => {
                     null
                 }
             </EditCarouselBlock>
-            <AddMore>
-                <h4>Add more Carousel Pictures</h4>
-                <DetailButton
-                    purpose="add"
-                    handleClick={() => handleAdd(props.carouselItems, props.setCarouselItems, { name: '', image: '' })}
-                />
-            </AddMore>
-        </EditSidesBlock>
+            <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => handleAdd(props.carouselItems, props.setCarouselItems, { name: '', image: '' })}
+                style={{ width: '200px', margin: 'auto' }}
+            >
+                Add more Carousel Pictures
+            </Button>
+            <br />
+        </React.Fragment>
     )
 }

@@ -31,12 +31,12 @@ export const MenuPage = (props) => (
                     </React.Fragment>
                 ) : null
             }
-            {props.data.sideItems ? 
-            <MenuSides 
-            sides={props.data.sideItems} 
-            carousel={props.data.carouselItems}
-            /> : 
-            null}
+            {props.data.sideItems ?
+                <MenuSides
+                    sides={props.data.sideItems}
+                    carousel={props.data.carouselItems}
+                /> :
+                null}
             <br />
             <MenuDisclaimer>
                 <p>*{props.data.disclaimer}</p>

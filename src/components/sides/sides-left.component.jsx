@@ -4,6 +4,7 @@ export const SidesLeft = styled.div`
     @media screen and (max-width: 995px){
         grid-area: 2 / 1 / 2 / 1;
         margin-bottom: 15px;
+        font-weight: bold
     }
     @media screen and (min-width: 995px){
         float: left;
