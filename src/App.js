@@ -92,7 +92,7 @@ const App = props => {
       <Route
         exact
         path={'/'+process.env.REACT_APP_LOGIN_ROUTE}
-        component={() =>
+        render={() =>
           <LoginPage
             setError={setError}
             username={username}

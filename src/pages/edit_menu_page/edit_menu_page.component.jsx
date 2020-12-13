@@ -31,15 +31,6 @@ const EditMenuPage = (props) => {
     const [deleteInd, setDeleteInd] = React.useState(0)
     const [changeOrder, setChangeOrder] = React.useState(false);
 
-    const handleImage = (index, data, array, cb) => {
-        let newData = [...array]
-        let newItem = newData[index]
-        newItem.image = data;
-        newItem.imageName = data.name
-        newData.splice(index, 1, newItem)
-        cb(newData);
-    }
-
     const handleLoad = () => {
         setOpenDates(props.data.openDates)
         setEntreeItems(props.data.entreeItems)
@@ -56,24 +47,10 @@ const EditMenuPage = (props) => {
         //eslint-disable-next-line
     }, [])
 
-    const handleSubmitCarousel = (i, data) => {
-        const newArray = [...carouselItems];
-        let itemRef = newArray[i];
-        console.log('in carousel', data)
-        itemRef.name = data.name;
-        itemRef.image = data.image;
-        delete itemRef.edit
-        setCarouselItems(newArray)
-    }
-
-    const handleSubmitNew = (i, data) => {
-        console.log('in new', data, entreeItems)
-        const newArray = [...entreeItems];
-        let itemRef = newArray[i];
-        itemRef.name = data.name;
-        itemRef.description = data.description;
-        delete itemRef.edit
-        setEntreeItems(newArray)
+    const handleSubmit = (i, data, array, cb) => {
+        const newArray = [...array];
+        newArray.splice(i, 1, {...data})
+        cb(newArray)
     }
 
     const handleDragEnd = (result) => {
@@ -92,8 +69,17 @@ const EditMenuPage = (props) => {
         const data = new FormData();
         data.append('openDates', JSON.stringify(openDates))
         data.append('popup', JSON.stringify(popup))
-        entreeItems.map(item => data.append('entreeImage', item.image))
-        carouselItems.map(item => data.append('carouselImage', item.image))
+        entreeItems.map(item => {
+            data.append('entreeImage', item.image)
+            delete item.preview;
+            return true
+        })
+        carouselItems.map(item => {
+            data.append('carouselImage', item.image)
+            delete item.preview;
+            return true
+        })
+        console.log(carouselItems)
         data.append('price', price)
         data.append('description', description)
         data.append('disclaimer', disclaimer)
@@ -111,6 +97,7 @@ const EditMenuPage = (props) => {
             .then(response => {
                 if (response.success) {
                     alert('saved!')
+                    localStorage.clear()
                     props.history.push('/menu');
                 } else {
                     alert(response.message)
@@ -129,7 +116,7 @@ const EditMenuPage = (props) => {
             <ChangeOrder
                 open={changeOrder}
                 setOpen={setChangeOrder}
-                entreeNames={entreeItems ? [...entreeItems.map(a => a.name)] : []}
+                items={entreeItems ? [...entreeItems.map(a => a.name)] : []}
                 handleDragEnd={handleDragEnd}
             />
             <Title />
@@ -184,8 +171,7 @@ const EditMenuPage = (props) => {
                             edit={item.edit ? item.edit : false}
                             item={item}
                             index={index}
-                            handleSubmitNew={handleSubmitNew}
-                            handleImage={handleImage}
+                            handleSubmit={handleSubmit}
                             entreeItems={entreeItems}
                             setEntreeItems={setEntreeItems}
                             editing={true}
@@ -229,10 +215,9 @@ const EditMenuPage = (props) => {
                 handleEdit={handleEdit}
                 handleAdd={handleAdd}
                 handleDelete={handleDelete}
-                handleSubmit={handleSubmitCarousel}
+                handleSubmit={handleSubmit}
                 carouselItems={carouselItems}
                 setCarouselItems={setCarouselItems}
-                handleImage={handleImage}
             />
             <MenuDisclaimer>
                 <EditDisclaimer setDisclaimer={setDisclaimer} disclaimer={disclaimer} />

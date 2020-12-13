@@ -24,26 +24,36 @@ const MenuRows = styled.div`
 
 export const MenuItem = (props) => {
     const [preview, setPreview] = React.useState('')
+    const [image, setImage] = React.useState(null)
     const [itemName, setItemName] = React.useState('')
-    const [itemDescription, setItemDescription] = React.useState('')
+    const [itemDescription, setItemDescription] = React.useState('');
+    const [imageName, setImageName] = React.useState('')
 
     const handleSubmit = () => {
         const data = {
             name: itemName,
-            description: itemDescription
+            description: itemDescription,
+            image: image,
+            itemName: itemName,
+            preview: preview,
+            imageName: imageName,
+            edit: false
         }
-        props.handleSubmitNew(props.index, data)
+        props.handleSubmit(props.index, data, props.entreeItems, props.setEntreeItems)
     }
 
     React.useEffect(() => {
         setItemName(props.item.name);
         setItemDescription(props.item.description)
-    }, [])
+        setImage(props.item.image)
+        setPreview(props.item.preview)
+    }, [props])
 
     const handleImage = async (e) => {
         e.preventDefault();
         const file = e.target.files[0];
-        props.handleImage(props.index, file, props.entreeItems, props.setEntreeItems);
+        setImage(file)
+        setImageName(file.name)
         if (window.FileReader) {
             const reader = new FileReader();
             if (file && file.type.match('image.*')) {

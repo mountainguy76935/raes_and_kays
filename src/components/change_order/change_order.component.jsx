@@ -71,8 +71,6 @@ export const ChangeOrder = props => {
         }
     }
 
-    React.useEffect(() => console.log('names', props.entreeNames), [props.entreeNames])
-
     React.useEffect(() => {
         document.addEventListener('mousedown', handleClickOff)
         return () => document.removeEventListener('mousedown', handleClickOff)
@@ -84,11 +82,11 @@ export const ChangeOrder = props => {
                 <ChangeOrderBlock ref={node} top="7%">
                     <h4>Drag and drop to reorder menu items!</h4>
                     <DragDropContext onDragEnd={props.handleDragEnd}>
-                        <Droppable droppableId="entreeItems">
+                        <Droppable droppableId="Items">
                             {(provided) =>
                                 <div ref={provided.innerRef} {...provided.droppableProps}>
-                                    {props.entreeNames.length > 0 ?
-                                        props.entreeNames.map((a, i) =>
+                                    {props.items.length > 0 ?
+                                        props.items.map((a, i) =>
                                             <Draggable
                                                 key={a}
                                                 draggableId={a}

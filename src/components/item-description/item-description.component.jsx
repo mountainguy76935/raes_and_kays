@@ -3,6 +3,7 @@ import { TextareaAutosize } from '@material-ui/core';
 import './item-description.styles.css';
 
 export const ItemDescription = (props) => {
+
     return (
         <div className='item-description'>
             <div className='item-description-text'>
